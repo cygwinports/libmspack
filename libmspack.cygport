@@ -1,0 +1,19 @@
+NAME="libmspack"
+VERSION=0.4
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="CAB/CHM/LZX/LZSS decompression library"
+DESCRIPTION="The purpose of libmspack is to provide both compression and
+decompression of some loosely related file formats used by Microsoft."
+HOMEPAGE="http://www.cabextract.org.uk/libmspack/"
+SRC_URI="http://www.cabextract.org.uk/libmspack/libmspack-${VERSION}alpha.tar.gz"
+SRC_DIR="libmspack-${VERSION}alpha"
+PATCH_URI="0.4-no-undefined.patch"
+
+DIFF_EXCLUDES="Doxyfile Makefile"
+
+PKG_NAMES="libmspack0 libmspack-devel"
+libmspack0_CONTENTS="usr/bin/cygmspack-0.dll usr/share/doc/"
+libmspack_devel_CONTENTS="usr/include/ usr/lib/"
+
+KEEP_LA_FILES="none"
