@@ -1,6 +1,6 @@
 NAME="libmspack"
-VERSION=0.4
-RELEASE=1
+VERSION=0.5
+RELEASE=0.1.alpha
 CATEGORY="Libs"
 SUMMARY="CAB/CHM/LZX/LZSS decompression library"
 DESCRIPTION="The purpose of libmspack is to provide both compression and
