@@ -16,4 +16,8 @@ PKG_NAMES="libmspack0 libmspack-devel"
 libmspack0_CONTENTS="usr/bin/cygmspack-0.dll usr/share/doc/"
 libmspack_devel_CONTENTS="usr/include/ usr/lib/"
 
-KEEP_LA_FILES="none"
+src_test() {
+	lndirs ${S}/test ${B}/test
+	cd ${B}/test
+	./cabd_test
+}
